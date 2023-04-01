@@ -1,0 +1,53 @@
+.navbar {
+    height: 100%;
+    width: 20%;
+    background-color: aliceblue;
+  }
+  .navbar2 {
+    height: 100%;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+.logo{
+  display: flex;
+  margin: 2%;
+}
+.image-logo_1{
+  width: 50px;
+  height: 50px;
+  
+}
+.text-logo{
+  color: black;
+  font-size: 34px;
+}
+.text-logo2{
+  color: rgb(255, 255, 255);
+  font-size: 34px;
+}
+
+@media screen and (max-width: 768px) {
+.nav {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+.text-logo{
+    
+        color: black;
+        font-size: 14px;
+      }
+.logo{
+        margin: 2%;
+      }
+      .image-logo_1{
+        width: 25px;
+        height: 25px;
+        
+      }
+}

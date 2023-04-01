@@ -1,0 +1,68 @@
+.naw-0{
+    color: rgb(97, 97, 97);
+    margin: 5%;
+
+}
+.naw-1{
+    color: rgb(255, 255, 255);
+    margin: 5%;
+
+}
+.label{
+    color: rgb(151, 151, 151);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.label1{
+    color: rgb(255, 255, 255);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.naw-0:hover {
+    color: rgb(151, 102, 243);
+    background-color: rgb(212, 212, 255);
+    border-radius: 10px;
+}
+.icon{
+    float: left;
+    margin-right: 3%;
+
+}
+a {
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .label{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 10px;
+    }
+    .label1{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 10px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .icon{
+        margin-right: 3%;
+        font-size: 10px;
+    }
+}
