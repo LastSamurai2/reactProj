@@ -8,6 +8,7 @@ function Contet(){
     <div class='content'>
         <SearchBar/>
         <MainContent/>
+        
     </div>
     )
     ;
