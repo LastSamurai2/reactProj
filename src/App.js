@@ -54,7 +54,7 @@ function App() {
     <Link to="/misc">
     <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faCube} text="Misc" />
     </Link>
-    <NavLabel className={isActive ? 'label1': 'label'} text="COMPONENTS" />
+    <NavLabel className={isActive ? 'color1': 'color2'} text="COMPONENTS" />
     <Link to="/cards">
     <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faClipboardList} text="Cards" />
     </Link>
@@ -69,7 +69,7 @@ function App() {
 
 </div>
 <Routes>
-        <Route path='/' element={<Contet/>}/>
+        <Route path='/' element={<Contet className={isActive ? 'color1': 'color2'}/>}/>
         <Route path='/layouts' element={<Layout/>}/>
         <Route path='/account' element={<Account/>}/>
         <Route path='/authentications' element={<Authentications/>}/>

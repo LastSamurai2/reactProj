@@ -1,11 +1,12 @@
 import React from "react";
 import './style.css'
+import '../../App.css'
 
 function MainCard(props){
     return (
-        <div className="main-card">
+        <div className="main-card DP-text DP-card-color">
           <div className="c-body">
-            <h1>{props.header}</h1>
+            <p class="DP-main-card-header">{props.header}</p>
             <p>{props.body}</p>
           </div>
           <div className="c-image">

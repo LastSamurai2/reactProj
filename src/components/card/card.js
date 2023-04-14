@@ -3,14 +3,14 @@ import './style.css'
 
 function Card(props){
     return (
-        <div className="card">
-          <div className="card-header">
+        <div className="card DP-card-color">
+          <div className="DP-card-header">
             {props.header}
           </div>
-          <div className="card-body"> 
+          <div className="DP-card-text"> 
             {props.body}
           </div>
-          <div className="card-footer"> 
+          <div className="DP-card-footer"> 
             {props.footer}
           </div>
         </div>

@@ -6,12 +6,12 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 function SearchBar(){
     return (
-        <div className="search-bar">
+        <div className="search-bar DP-card-color">
           <div className="searcher">
-           <button className="btn">
+           <button className="btn DP-card-color">
         <FontAwesomeIcon icon={faSearch} />        
         </button>
-        <input className="intput1"
+        <input className="intput1 DP-card-color"
           type="text"
           placeholder="Wyszukaj..."
         />

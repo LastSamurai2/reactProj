@@ -3,7 +3,6 @@
     flex-direction: row; 
     justify-content: center; 
     align-items: center;
-    background-color: aliceblue;
     border-radius: 10px;
     margin: 1%;
     padding: 2%;
@@ -13,7 +12,6 @@
   }
   .btn{
     border: 0px;
-    background-color: aliceblue;
   }
   .btn-star{
     flex-direction: row-reverse;
@@ -21,7 +19,6 @@
   }
   .intput1{
     border: 0px;
-    background-color: aliceblue;
   }
  .user-img{
   border-radius: 50%;
@@ -40,7 +37,6 @@
         flex-direction: row; 
         justify-content: center; 
         align-items: center;
-        background-color: aliceblue;
         border-radius: 10px;
         margin: 1%;
         padding: 2%;

@@ -1,4 +1,65 @@
+#color1 .tet{
+  color:white;
+}
+#color2
+.tet{
+  color:rgb(53, 0, 243);
+}
+
 .App {
   display: flex;
   height: 100vh;
+}
+#color1 .DP-text{
+  color: #fdfbfb;
+  font-size: 18px;
+}
+#color2 .DP-text{
+  color: #2c2c2c;
+  font-size: 18px;
+}
+#color1 .DP-card-color{
+  background-color: rgb(0, 0, 0);
+}
+#color2 .DP-card-color{
+  background-color: aliceblue;
+}
+
+#color1 .DP-main-card-header{
+    color: rgb(243, 255, 78);
+    font-size: 32px;
+    font-weight: bold;
+}
+#color2 .DP-main-card-header{
+  color: blueviolet;
+  font-size: 32px;
+  font-weight: bold;
+}
+#color1 .DP-card-header{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+#color2 .DP-card-header{
+    font-size: 20px;
+    color: gray;
+}
+#color2 .DP-card-text{
+    font-size: 32px;
+    color: rgb(163, 0, 0);
+}
+#color1 .DP-card-text{
+  font-size: 32px;
+  color: rgb(255, 254, 254);
+}
+#color2 .DP-card-text{
+  font-size: 32px;
+  color: gray;
+}
+#color1 .DP-card-footer{
+  font-size: 15px;
+  color: rgb(255, 246, 115);
+}
+#color2 .DP-card-footer{
+    font-size: 15px;
+    color: rgb(42, 173, 53);
 }

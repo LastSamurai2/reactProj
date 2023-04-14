@@ -3,9 +3,9 @@ import './style.css';
 import SearchBar from "../searchbar/searchbar";
 import MainContent from "../maincontent/maincontent";
 
-function Contet(){
+function Contet(props){
     return (
-    <div class='content'>
+    <div class='content' id={props.className}>
         <SearchBar/>
         <MainContent/>
         
