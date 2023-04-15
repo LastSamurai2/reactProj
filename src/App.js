@@ -27,12 +27,18 @@ function App() {
   const toggleClass = () => {
     setActive(!isActive);
   };
+
+  const [fontSize, setFontSize] = useState(16);
+  
+  const increaseFontSize = () => {
+      setFontSize((prevFontSize) => prevFontSize + 1);
+    };
+    const decreaseFontSize = () => {
+      setFontSize((prevFontSize) => prevFontSize - 1);
+    };
   return (
     <div className="App">
       {/* <NavbarLeft /> */}
-
-
-
 
   <Router>
             
@@ -63,8 +69,13 @@ function App() {
     </Link>
     <div>
         Wybierz tryb  
-        <button 
-  onClick={toggleClass} >kliknij</button>
+        <button onClick={toggleClass} >kliknij</button>
+    </div>
+    <button onClick={increaseFontSize}>Powiększ tekst</button>
+    <button onClick={decreaseFontSize}>Zmniesz tekst</button>
+    <div style={{ fontSize: `${fontSize}px` }}>
+      
+      <p>Przykład zmiany rozmiaru textu</p>
     </div>
 
 </div>
