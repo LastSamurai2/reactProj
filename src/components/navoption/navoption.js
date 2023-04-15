@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NavOption(props){
     return (
-        <div className={props.className}>
+        <div className={props.className}  style={{ fontSize: `${props.fontSize}px` }}>
         <a href="#"> 
           <div className="icon">
           <FontAwesomeIcon icon={props.icon} />

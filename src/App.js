@@ -28,10 +28,11 @@ function App() {
     setActive(!isActive);
   };
 
+  
   const [fontSize, setFontSize] = useState(16);
   
   const increaseFontSize = () => {
-      setFontSize((prevFontSize) => prevFontSize + 1);
+      setFontSize( (prevFontSize) => prevFontSize + 1);
     };
     const decreaseFontSize = () => {
       setFontSize((prevFontSize) => prevFontSize - 1);
@@ -43,44 +44,40 @@ function App() {
   <Router>
             
 <div className={isActive ? 'navbar2': 'navbar'} >
-    <Logo className={isActive ? 'text-logo2': 'text-logo'}/>
-    <Link to="/">
-    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faHouse} text="Dashboard" />
-    </Link>
-    <Link to="/layouts">
-    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faTable} text="Layouts" />
-    </Link>
-    <NavLabel className={isActive ? 'label1': 'label'} text="PAGES" />
-    <Link to="/account">
-    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faGear} text="Account setings" />
-    </Link>
-    <Link to="/authentications">
-    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faLock} text="Authentisations" />
-    </Link>
-    <Link to="/misc">
-    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faCube} text="Misc" />
-    </Link>
-    <NavLabel className={isActive ? 'color1': 'color2'} text="COMPONENTS" />
-    <Link to="/cards">
-    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faClipboardList} text="Cards" />
-    </Link>
-    <Link to="/interface">
-    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faCreditCard} text="User interface" />
-    </Link>
-    <div>
-        Wybierz tryb  
-        <button onClick={toggleClass} >kliknij</button>
+  <Logo className={isActive ? 'text-logo2': 'text-logo'}/>
+  <div>
+       Tryp ciemny/jasny 
+        <button onClick={toggleClass} >zmień</button>
     </div>
     <button onClick={increaseFontSize}>Powiększ tekst</button>
     <button onClick={decreaseFontSize}>Zmniesz tekst</button>
-    <div style={{ fontSize: `${fontSize}px` }}>
-      
-      <p>Przykład zmiany rozmiaru textu</p>
-    </div>
-
+    
+    <Link to="/">
+    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faHouse} text="Dashboard" fontSize={fontSize}/>
+    </Link>
+    <Link to="/layouts">
+    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faTable} text="Layouts" fontSize={fontSize}/>
+    </Link>
+    <NavLabel className={isActive ? 'label1': 'label'} text="PAGES" />
+    <Link to="/account">
+    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faGear} text="Account setings" fontSize={fontSize}/>
+    </Link>
+    <Link to="/authentications">
+    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faLock} text="Authentisations" fontSize={fontSize}/>
+    </Link>
+    <Link to="/misc">
+    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faCube} text="Misc" fontSize={fontSize}/>
+    </Link>
+    <NavLabel className={isActive ? 'color1': 'color2'} text="COMPONENTS" />
+    <Link to="/cards">
+    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faClipboardList} text="Cards" fontSize={fontSize}/>
+    </Link>
+    <Link to="/interface">
+    <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faCreditCard} text="User interface" fontSize={fontSize}/>
+    </Link>
 </div>
 <Routes>
-        <Route path='/' element={<Contet className={isActive ? 'color1': 'color2'}/>}/>
+        <Route path='/' element={<Contet className={isActive ? 'color1': 'color2'} fontSize={fontSize}/>}/>
         <Route path='/layouts' element={<Layout/>}/>
         <Route path='/account' element={<Account/>}/>
         <Route path='/authentications' element={<Authentications/>}/>

@@ -7,7 +7,7 @@ function Contet(props){
     return (
     <div class='content' id={props.className}>
         <SearchBar/>
-        <MainContent/>
+        <MainContent fontSize={props.fontSize}/>
         
     </div>
     )
