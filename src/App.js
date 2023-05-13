@@ -11,6 +11,8 @@ import Cards from './components/cards';
 import Misc from './components/misc';
 import Account from './components/account';
 import Authentications from './components/authentications';
+import ChatButton from './components/ChatButton2';
+import Login from './components/login/login';
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faTable } from "@fortawesome/free-solid-svg-icons";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
@@ -22,6 +24,12 @@ import { BrowserRouter as Router, Routes , Route, Link } from 'react-router-dom'
 
 
 function App() {
+  const [statechat, setStatechat] = useState(false);
+  const checkState = () => {
+    setStatechat(!statechat)
+  }
+
+
   const [isActive, setActive] = useState(false);
 
   const toggleClass = () => {
@@ -75,8 +83,12 @@ function App() {
     <Link to="/interface">
     <NavOption className={isActive ? 'naw-1': 'naw-0'} icon={faCreditCard} text="User interface" fontSize={fontSize}/>
     </Link>
+    
+    <button onClick={checkState}>Show chat</button>  
 </div>
-<Routes>
+
+      <Routes>
+      
         <Route path='/' element={<Contet className={isActive ? 'color1': 'color2'} fontSize={fontSize}/>}/>
         <Route path='/layouts' element={<Layout/>}/>
         <Route path='/account' element={<Account/>}/>
@@ -84,10 +96,11 @@ function App() {
         <Route path='/misc' element={<Misc/>}/>
         <Route path='/cards' element={<Cards/>}/>
         <Route path='/interface' element={<Interface/>}/>
+       
       </Routes>
+     
 </Router>
-
-      
+<ChatButton show={statechat} />
     </div>
   );
 }

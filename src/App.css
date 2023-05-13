@@ -63,3 +63,24 @@
     font-size: 15px;
     color: rgb(42, 173, 53);
 }
+
+.chat{
+  width: 400px;
+  height: 500px;
+  background-color: pink;
+  border-radius: 5%;
+  border:rgb(0, 0, 0) solid 1px;
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+}
+
+.circle-icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+}

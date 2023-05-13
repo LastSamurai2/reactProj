@@ -3,6 +3,7 @@ import './style.css'
 import Card from "../card/card";
 import MainCard from "../card/maincard";
 
+
 function MainContent(props){
     return (
         <div className="main-content">
